@@ -68,7 +68,7 @@ nav {
 .get-in-touch-band {
   background: 
               url('BANNERS/BANNER\ CONTACTO.webp') center/cover no-repeat;
-  display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 450px; padding: 200px 180px;
+  display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 450px; padding: 300px 180px;
 }
 .touch-left h2 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 34px; color: #fff; margin-bottom: 14px; }
 .touch-left p { color: rgba(255,255,255,.8); font-size: 14px; line-height: 1.7; max-width: 360px; }
