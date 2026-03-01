@@ -49,10 +49,11 @@ img {
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   display: flex; align-items: center; justify-content: space-between;
-  background: var(--white); padding: 0 0 0 200px; height: 180px;
+  background: var(--white); padding: 0 0 0 10%; height: calc(100vh * .18);
   box-shadow: 0 2px 10px rgba(0,0,0,0.09);
 }
 .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; cursor: pointer; }
+.logo img { width: 100%; max-height: calc(100vh * .12); }
 .logo-text .brand { font-family: 'Anuphan Regular', sans-serif; font-weight: 800; font-size: 17px; color: var(--dark); letter-spacing: 1px; display: block; }
 .logo-text .sub { font-size: 8.5px; color: var(--gray); letter-spacing: 2px; text-transform: uppercase; display: block; }
 .nav-links { display: flex; align-items: center; gap: 28px; }
@@ -72,7 +73,7 @@ nav {
   color: #fff !important;
   font-weight: 700;
   padding: 0 50px;
-  height: 180px;
+  height: calc(100vh * .18);
   display: flex;
   align-items: center;
   margin-left: 0px;
@@ -88,7 +89,7 @@ nav {
   color: #fff;
   font-family: 'Anuphan Regular', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 1.4vw;
   padding: 16px 38px;
   text-decoration: none;
   letter-spacing: .5px;
@@ -108,27 +109,29 @@ nav {
 /* ===================== HOME - HERO ===================== */
 #hero-section {
   position: relative;
-  height: calc(100vh - 110px);
+  height: calc(100vh * .95);
   min-height: 600px;
   display: flex;
   align-items: center;
   background: url('../images/BANNERS/BANNER\ INICIO.webp') center/cover no-repeat;
 }
-.hero-content { padding: 0 200px; max-width: calc(100%); }
+.hero-content { padding: 5% 10%; max-width: calc(100%); margin-top: calc(100vh * .18);}
 .hero-content h1 {
   font-family: 'Anuphan Regular', sans-serif;
   font-weight: 700;
-  font-size: clamp(38px,5vw,64px);
+  /* font-size: clamp(38px,5vw,64px); */
+  font-size: 3.2vw;
   color: #fff;
   line-height: 1.1;
   margin-bottom: 24px;
-  max-width: calc(60%);
+  max-width: 65%;
 }
 .hero-content p {
   font-family: 'Anuphan Regular', sans-serif;
   color: rgba(255,255,255,.9);
   font-weight: 500;
-  font-size: 25px;
+  /* font-size: 25px; */
+  font-size: 3.2vh;
   line-height: 1.8;
   margin-bottom: 40px;
   max-width: calc(55%);
@@ -137,11 +140,12 @@ nav {
 /* ===================== HERO ICON CARDS ===================== */
 .hero-icons {
   position: absolute;
-  bottom: -30px;
+  /* bottom: -1vh; */
+  margin-top: 112vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
-  padding: 0px 200px;
+  padding: 0 10%;
   background: transparent;
 }
 .hero-icon-item {
@@ -158,7 +162,7 @@ nav {
   transition: transform .2s ease, box-shadow .2s ease;
   font-family: 'Anuphan Regular', sans-serif;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.5vw;
   color: #333;
 }
 .hero-icon-item:hover {
@@ -178,10 +182,10 @@ nav {
 .hero-icon-item:last-child { border-right: none; }
 
 /* ===================== WHAT WE DO ===================== */
-#what-we-do { background: #fff; padding: 10% 5%; font-family: 'Anuphan Regular', sans-serif; }
-.section-title { font-weight: 700; font-size: 60px; text-align: center; margin-bottom: 12px; }
-.section-sub { text-align: center; color: var(--gray); font-size: 25px; line-height: 1.8; max-width: calc(50%); margin: 0 auto 50px; }
-.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: calc(70%); margin: 0 auto; }
+#what-we-do { background: #fff; padding: 35vh 5% 20vh; font-family: 'Anuphan Regular', sans-serif; }
+.section-title { font-weight: 700; font-size: 3vw; text-align: center; margin-bottom: 12px; }
+.section-sub { text-align: center; color: var(--gray); font-size: 1.4vw; line-height: 1.8; max-width: calc(60%); margin: 0 auto 50px; }
+.services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; max-width: calc(80%); margin: 0 auto; }
 .service-card { overflow: hidden; border: 1px solid #e8e8e8; cursor: pointer; }
 .service-card img { width: 100%; height: auto; object-fit: cover; display: block; transition: transform .4s; }
 .service-card:hover img { transform: scale(1.05); }
@@ -266,10 +270,10 @@ nav {
 .get-in-touch-band {
   font-family: 'Anuphan Regular', sans-serif;
   background: url('../images/BANNERS/BANNER\ CONTACTO.webp') center/cover no-repeat;
-  display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 450px; padding: 200px 180px;
+  display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 25%; padding: 10%;
 }
-.touch-left h2 { font-family: 'Anuphan Regular', sans-serif; font-weight: 700; font-size: 60px; color: #fff; margin-bottom: 14px; }
-.touch-left p { font-family: 'Anuphan Regular', sans-serif; color: rgba(255,255,255,.8); font-size: 22px; line-height: 1.7; max-width: 100%; }
+.touch-left h2 { font-family: 'Anuphan Regular', sans-serif; font-weight: 700; font-size: 3vw; color: #fff; margin-bottom: 14px; }
+.touch-left p { font-family: 'Anuphan Regular', sans-serif; color: rgba(255,255,255,.8); font-size: 1.5vw; line-height: 1.7; max-width: 100%; }
 .touch-right { font-family: 'Anuphan Regular', sans-serif; display: flex; flex-direction: column; gap: 20px; }
 .contact-item { display: flex; align-items: center; gap: 16px; }
 .contact-icon { width: 56px; height: 56px; background: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -294,11 +298,11 @@ footer {
 /* ===================== SECTION HERO (Services & Machinery) ===================== */
 .section-hero {
   position: relative;
-  height: calc(100vh - 110px);
+  height: calc(100vh * .85);
   min-height: 600px;
   display: flex;
   align-items: center;
-  padding: 0 200px;
+  padding: 0 10%;
   background-size: cover;
   background-position: center;
 }
@@ -306,12 +310,14 @@ footer {
 .section-hero-content {
   position: relative;
   z-index: 1;
-  max-width: 1100px; 
+  max-width: 70%;
+  margin-top: 30vh;
 }
 .section-hero-content h1 {
   font-family: 'Anuphan Regular', sans-serif;
   font-weight: 700;
-  font-size: clamp(38px,5vw,64px);
+  /* font-size: clamp(38px,5vw,64px); */
+  font-size: 3.3vw;
   color: #fff;
   line-height: 1.1;
   margin-bottom: 28px; 
@@ -321,7 +327,7 @@ footer {
   font-family: 'Anuphan Regular', sans-serif;
   color: rgba(255,255,255,.92);
   font-weight: 500;
-  font-size: 25px;
+  font-size: 1.5vw;
   line-height: 1.8;
   max-width: 900px; 
 }
@@ -399,12 +405,12 @@ footer {
 .svc-text h3 {
   font-family: 'Anuphan Regular', sans-serif;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 2vw;
   margin-bottom: 24px;
   color: #2d2d2d;
 }
 .svc-text p {
-  font-size: 18px;
+  font-size: 1.3vw;
   line-height: 1.8;
   color: #444;
   margin-bottom: 22px;
@@ -416,7 +422,7 @@ footer {
   font-family: 'Anuphan Bold', sans-serif;
   padding-left: 28px;
   margin-bottom: 16px;
-  font-size: 17px;
+  font-size: 1.2vw;
   font-weight: 600;
   color: #2d2d2d;
   line-height: 1.6;
@@ -770,6 +776,7 @@ footer {
   .machinery-grid { grid-template-columns: 1fr 1fr; padding: 50px 24px; width: 100%; }
   .indiana-band { padding: 50px 24px; gap: 30px; }
   footer { grid-template-columns: 1fr; padding: 40px 24px; }
+  .footer-brand { text-align: center; }
   .band-content { flex-direction: column; gap: 30px; }
   .touch-left h2 { font-size: 36px; }
   .touch-left p { font-size: 16px; }
@@ -799,11 +806,14 @@ footer {
   .facility-left p { font-size: 16px; }
   .svc-detail { padding: 60px 24px; }
   .svc-text h3 { font-size: 26px; }
-  .svc-text p { font-size: 16px; }
+  .svc-text p,
+  .svc-text ul li 
+  { font-size: 16px; }
   .other-services-section { padding: 60px 24px; }
   .other-grid { grid-template-columns: 1fr; }
   .machinery-grid { width: 100%; padding: 40px 24px; }
   .contact-panel { width: 100%; padding: 50px 24px; }
+  .footer-brand { text-align: center; }
 }
 
 /* ===================== RESPONSIVE: 600px ===================== */
@@ -823,13 +833,15 @@ footer {
   .hero-content h1 { font-size: 28px; }
   .hero-content p { font-size: 16px; }
   .hero-icons { padding: 0 20px; }
+  .footer-brand { text-align: center; }
 }
 /* ================= HERO RESPONSIVE FIX ================= */
 
 /* Desktop grande */
 @media (max-width: 1600px) {
   .hero-content {
-    padding: 0 clamp(40px, 8vw, 160px);
+    /* padding: 0 clamp(40px, 8vw, 160px); */
+    padding: 5% 10%;
   }
 }
 
@@ -869,12 +881,14 @@ footer {
     padding: 0 40px;
   }
 
-  .hero-content h1 {
+  .hero-content h1,
+  .section-hero-content h1 {
     max-width: 100%;
     font-size: clamp(32px, 5vw, 48px);
   }
 
-  .hero-content p {
+  .hero-content p,
+  .section-hero-content p {
     max-width: 100%;
     font-size: 20px;
   }
@@ -920,12 +934,14 @@ footer {
     padding-bottom: 40px;
   }
 
-  .hero-content h1 {
+  .hero-content h1,
+  .section-hero-content h1 {
     font-size: 28px;
     line-height: 1.2;
   }
 
-  .hero-content p {
+  .hero-content p,
+  .section-hero-content p {
     font-size: 16px;
     line-height: 1.6;
   }
