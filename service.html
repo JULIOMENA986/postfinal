@@ -5,28 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Torreón Manufacturing & Exports</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+   <div id="nav-container"></div>
 
-    <nav>
-  <div class="logo" onclick="showPage('home')">
-    <img src="LOGO/LOGO.webp" alt="">
-    
-  </div>
-  <div class="nav-links">
-    <a onclick="showPage('home')" id="nav-about">About Us</a>
-    <a onclick="showPage('services')" id="nav-services">Services</a>
-    <a onclick="showPage('machinery')" id="nav-machinery">Machinery</a>
-    <a class="btn-contact" onclick="openContact()">Contact Us</a>
-  </div>
-</nav>
-    <div class="page" id="page-services">
-
-  <div class="section-hero" style="background-image:url('https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&q=80');">
+  <div class="section-hero" style="background-image:url('../images/BANNERS/BANNER SERVICES.webp');">
     <div class="section-hero-content">
       <h1>Our Services</h1>
-      <p>We offer a wide range of machining, fabrication, engineering and manufacturing services for various industrial sectors. <strong>All of our services meet the highest quality standards thanks to our advanced technology and highly skilled team.</strong></p>
+      <br>
+      <p>We offer a wide range of machining, fabrication, </p>
+      <p>engineering and manufacturing services for various industrial sectors. <strong>All of our services meet the highest quality standards thanks to our advanced technology and highly skilled team.</strong></p>
     </div>
   </div>
 
@@ -45,7 +34,7 @@
 
   <!-- CNC -->
   <div class="svc-detail">
-    <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=700&q=80" alt="CNC Machining">
+    <img src="../images/IMAGENES SERVICIOS/CNC Machining & Manufacturing.webp" alt="CNC Machining">
     <div class="svc-text">
       <h3>CNC Machining &amp; Manufacturing</h3>
       <p>We manufacture high-quality, dependable parts for U.S. companies seeking a cost-efficient and reliable partner in Mexico.</p>
@@ -65,12 +54,12 @@
         <li>Parts made from a wide range of materials (steel, stainless, aluminum, alloys, etc.)</li>
       </ul>
     </div>
-    <img src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=700&q=80" alt="Custom Parts">
+    <img src="../images/IMAGENES SERVICIOS/Custom Parts Manufacturing.webp" alt="Custom Parts">
   </div>
 
   <!-- Warehousing -->
   <div class="svc-detail">
-    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=80" alt="Warehousing">
+    <img src="../images/IMAGENES SERVICIOS/Warehousing & ÔÇ¿Inventory Management.webp" alt="Warehousing">
     <div class="svc-text">
       <h3>Warehousing &amp; Inventory Management</h3>
       <p>We store your finished parts in our facility so you always have stock ready when needed.</p>
@@ -97,34 +86,45 @@
         <li>Reliable, on-time deliveries</li>
       </ul>
     </div>
-    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=80" alt="Export">
+    <img src="../images/IMAGENES SERVICIOS/Export & Delivery to the U.webp" alt="Export">
   </div>
 
   <div class="other-services-section">
     <h2>Other Services</h2>
     <div class="other-grid">
-      <div class="other-card reveal"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&q=80" alt="Conventional"><span>Conventional Machining And CNC</span></div>
-      <div class="other-card reveal"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&q=80" alt="Measuring"><span>Coordinate Measuring Machine</span></div>
-      <div class="other-card reveal"><img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?w=500&q=80" alt="Boilermaking"><span>Boilermaking</span></div>
-      <div class="other-card reveal"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=500&q=80" alt="Engineering"><span>Engineering And Design</span></div>
-      <div class="other-card reveal"><img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?w=500&q=80" alt="Laser"><span>Laser Cutting And Bending</span></div>
-      <div class="other-card reveal"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Powder"><span>Powder Coat Painting</span></div>
+      <div class="other-card reveal"><img src="../images/IMAGENES SERVICIOS/Conventional Machining and CNC.webp" alt="Conventional"><span>Conventional Machining And CNC</span></div>
+      <div class="other-card reveal"><img src="../images/IMAGENES SERVICIOS/Coordinate Measuring Machine.webp" alt="Measuring"><span>Coordinate Measuring Machine</span></div>
+      <div class="other-card reveal"><img src="../images/IMAGENES SERVICIOS/Boilermaking.webp" alt="Boilermaking"><span>Boilermaking</span></div>
+      <div class="other-card reveal"><img src="../images/IMAGENES SERVICIOS/Engineering and Design.webp" alt="Engineering"><span>Engineering And Design</span></div>
+      <div class="other-card reveal"><img src="../images/IMAGENES SERVICIOS/Laser cutting and bending.webp" alt="Laser"><span>Laser Cutting And Bending</span></div>
+      <div class="other-card reveal"><img src="../images/IMAGENES SERVICIOS/Powder Coat painting.webp" alt="Powder"><span>Powder Coat Painting</span></div>
     </div>
   </div>
 
   <div class="get-in-touch-band">
     <div class="touch-left"><h2>Get In Touch With Us</h2><p>Our team is here to answer your questions, review your project, or provide a quote for your parts.</p></div>
     <div class="touch-right">
-      <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><h4>Send us an email</h4><p>sales@gmail.com</p></div></div>
-      <div class="contact-item"><div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.34 2 2 0 0 1 3.6 1.16h3a2 2 0 0 1 2 1.72c.13.88.36 1.75.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c1.06.34 1.93.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><h4>Give us a call</h4><p>(000) 000 0000</p></div></div>
+      <div class="contact-item"><div class="contact-icon"><img src="../images/ICONOS/MAIL.webp" alt=""></div><div><h4>Send us an email</h4><p>sales@gmail.com</p></div></div>
+      <div class="contact-item"><div class="contact-icon"><img src="../images/ICONOS/CALL.webp" alt=""></div><div><h4>Give us a call</h4><p>(000) 000 0000</p></div></div>
     </div>
   </div>
+    <br>
+    <br>
+  <div id="contact-container"></div>
+<div id="footer-container"></div>
 
-  <footer>
-    <div class="footer-brand"><svg viewBox="0 0 52 52" width="44" height="44" fill="none"><circle cx="26" cy="26" r="24" fill="#222" stroke="#c0392b" stroke-width="2.5"/><polygon points="8,41 21,19 34,41" fill="#c0392b"/><polygon points="25,41 36,21 47,41" fill="#777"/><polygon points="20,21 26,9 32,21 26,17" fill="#fff" opacity=".9"/></svg><div class="brand-name">TORREÓN</div><div class="footer-sub">Manufacturing &amp; Exports</div><div class="footer-copy">Torreón Manufacturing &amp; Exports 2026</div><div class="footer-dev">Developed by A W Software</div></div>
-    <div class="footer-col"><a onclick="showPage('home')">About Us</a><a onclick="showPage('services')">Services</a><a onclick="showPage('machinery')">Machinery</a></div>
-    <div class="footer-col"><h5>Contact Us</h5><p>(000) 000 0000</p><p>sales@gmail.com</p></div>
-  </footer>
-</div>
+<script src="/components.js"></script>
+  <script>
+function openContact() {
+  document.getElementById('contactOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeContact() {
+  document.getElementById('contactOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+</script>
+
+
 </body>
 </html>
